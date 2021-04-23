@@ -1,0 +1,124 @@
+/*
+  Author:   Robert Zaranek
+  Date:     December 10, 2020
+
+  Purpose:  The CSS styling for the 'Robert's Cauldron of Characters' web application.
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+body {
+    background-image: url('stonewall.jpg');
+    background-size: 600px;
+}
+
+/* MAIN FORM */
+
+@media screen and (min-width: 750px) {
+    main {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    main {
+        width: 300px;
+    }
+}
+
+main {
+    padding: 10px 0 10px 0;
+    margin: 180px auto 0 auto;
+    text-align: center;
+    position: relative;
+    display: none;
+    background-image: url('wood.png');
+    border: 5px outset rgb(194, 160, 117);
+    filter: drop-shadow( 5px 5px 5px black);
+}
+
+#left_chain, #right_chain {
+    width: 100px;
+    height: 700px;
+    background-image: url('chain.png');
+    background-size: 100px 175px;
+}
+
+#left_chain {
+    position: absolute;
+    top: -705px;
+}
+
+#right_chain {
+    position: absolute;
+    top: -705px;
+    right: 0;
+}
+
+hr {
+    border: 1px solid darkgoldenrod;
+    margin: 10px;
+}
+
+h1 {
+    font-family: papyrus, fantasy;
+    font-weight: bolder;
+}
+
+h1, h3 {
+    margin: 0 0 5px 0;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+
+img {
+    height: 18px;
+    width: 18px;
+    padding: 0 5px;
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+form {
+    position: relative;
+}
+
+#cancel_edit_button {
+    bottom: 8px;
+    display: none;
+    position: absolute;
+}
+
+#logout_button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+input {
+    margin: 5px 0 5px 0;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+    margin: 0 5px;
+}
+
+img:hover, input[type=checkbox]:hover, input[type=submit]:hover {
+    cursor: pointer;
+}
